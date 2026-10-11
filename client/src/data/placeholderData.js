@@ -1,0 +1,74 @@
+export const causes = [
+  { id: 1, title: 'Feed a Cow', description: 'Provide nutritious fodder, jaggery, and fresh water to a cow for a month.', image: 'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600', suggestedAmount: 1100, raised: 45000, goal: 100000, donorCount: 42 },
+  { id: 2, title: 'Medical Care', description: 'Support veterinary care, medicines, and treatment for injured or sick cattle.', image: 'https://images.unsplash.com/photo-1527153907836-6eee12ec34f4?w=600', suggestedAmount: 2100, raised: 85000, goal: 150000, donorCount: 78 },
+  { id: 3, title: 'Monthly Cow Care', description: 'Comprehensive care including food, shelter, and regular checkups for a cow.', image: 'https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?w=600', suggestedAmount: 5100, raised: 120000, goal: 200000, donorCount: 30 },
+  { id: 4, title: 'Adopt a Cow', description: 'Take full responsibility for a cow for an entire year. Includes naming rights.', image: 'https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600', suggestedAmount: 31000, raised: 310000, goal: 500000, donorCount: 10 },
+  { id: 5, title: 'Shelter & Maintenance', description: 'Help build and maintain sheds to protect cows from extreme weather.', image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600', suggestedAmount: 5100, raised: 75000, goal: 300000, donorCount: 25 },
+  { id: 6, title: 'General Donation', description: 'Your funds will be allocated to the most urgent needs of the Gaushala.', image: 'https://images.unsplash.com/photo-1585207693218-89e083e52983?w=600', suggestedAmount: 1000, raised: 250000, goal: 500000, donorCount: 156 }
+];
+
+export const events = [
+  { id: 1, title: 'Gopashtami Mahotsav', description: 'Annual celebration honoring cows with special pooja, bhajan, and bhandara.', date: '2024-11-20T10:00:00Z', location: 'Main Gaushala Campus', image: 'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600', category: 'Festival' },
+  { id: 2, title: 'Free Veterinary Camp', description: 'Health checkups and vaccinations for local farmers cattle.', date: '2024-12-05T09:00:00Z', location: 'Village Community Center', image: 'https://images.unsplash.com/photo-1527153907836-6eee12ec34f4?w=600', category: 'Medical' },
+  { id: 3, title: 'Weekend Volunteer Drive', description: 'Join us for a day of cleaning sheds, feeding cows, and maintenance.', date: '2024-12-15T08:00:00Z', location: 'Main Gaushala Campus', image: 'https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?w=600', category: 'Volunteer' },
+  { id: 4, title: 'Cow Awareness Program', description: 'Educational seminar on indigenous cow breeds and organic farming.', date: '2025-01-10T11:00:00Z', location: 'City Town Hall', image: 'https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600', category: 'Education' },
+  { id: 5, title: 'Makar Sankranti Special Feed', description: 'Special grand feeding event for 1000+ cows.', date: '2025-01-14T07:00:00Z', location: 'All Shelters', image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600', category: 'Festival' }
+];
+
+export const galleryImages = [
+  { id: 1, url: 'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600', category: 'Cows', alt: 'Healthy indigenous cow' },
+  { id: 2, url: 'https://images.unsplash.com/photo-1527153907836-6eee12ec34f4?w=600', category: 'Daily Care', alt: 'Feeding time' },
+  { id: 3, url: 'https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?w=600', category: 'Cows', alt: 'Calf resting' },
+  { id: 4, url: 'https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600', category: 'Gaushala', alt: 'Shelter view' },
+  { id: 5, url: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600', category: 'Volunteers', alt: 'Volunteers helping' },
+  { id: 6, url: 'https://images.unsplash.com/photo-1585207693218-89e083e52983?w=600', category: 'Medical Care', alt: 'Vet checking a cow' }
+];
+
+export const testimonials = [
+  { id: 1, name: 'Rajesh Kumar', location: 'Delhi', avatar: 'https://i.pravatar.cc/150?img=11', text: 'Visiting this Gaushala was a deeply spiritual experience. The care they provide to the cows is exceptional.', rating: 5 },
+  { id: 2, name: 'Priya Sharma', location: 'Mumbai', avatar: 'https://i.pravatar.cc/150?img=5', text: 'I have been donating monthly for a year now. The transparency and regular updates make me trust them completely.', rating: 5 },
+  { id: 3, name: 'Amit Patel', location: 'Ahmedabad', avatar: 'https://i.pravatar.cc/150?img=15', text: 'Volunteering here on weekends gives me immense peace. The management is very organized.', rating: 4 },
+  { id: 4, name: 'Neha Gupta', location: 'Pune', avatar: 'https://i.pravatar.cc/150?img=9', text: 'Adopted a cow for my parents anniversary. Best decision ever. We love receiving pictures of Gauri!', rating: 5 },
+  { id: 5, name: 'Vikram Singh', location: 'Jaipur', avatar: 'https://i.pravatar.cc/150?img=33', text: 'Their medical facilities for injured street cattle are truly commendable. Real unsung heroes.', rating: 5 },
+  { id: 6, name: 'Anjali Desai', location: 'Surat', avatar: 'https://i.pravatar.cc/150?img=20', text: 'The organic products they sell are authentic and pure. Proud to support this noble cause.', rating: 4 }
+];
+
+export const faqs = [
+  { question: 'How can I donate?', answer: 'You can donate online through our secure payment gateway using UPI, Credit/Debit cards, or Net Banking. Click on the "Donate Now" button to get started.' },
+  { question: 'Are my donations tax-exempt?', answer: 'Yes, all donations are exempt under Section 80G of the Income Tax Act. You will receive an automated 80G receipt via email.' },
+  { question: 'Can I visit the Gaushala?', answer: 'Absolutely! We welcome visitors every day between 6:00 AM and 6:00 PM. Please book a visit through our website for a guided tour.' },
+  { question: 'How do I volunteer?', answer: 'You can register as a volunteer by visiting the "Volunteer" page. We have various opportunities ranging from daily care to event management.' },
+  { question: 'What is cow adoption?', answer: 'Cow adoption means taking financial responsibility for a cows food, shelter, and medical needs for a year. You can name the cow and visit her anytime.' },
+  { question: 'Where do the funds go?', answer: '100% of your donations go towards cow welfare, including fodder, medical supplies, infrastructure maintenance, and staff salaries.' },
+  { question: 'Do you accept physical donations like fodder?', answer: 'Yes, we gladly accept dry fodder, jaggery, and medical supplies at our center. Please contact us before bringing large quantities.' },
+  { question: 'How can I get regular updates?', answer: 'Subscribe to our newsletter and follow us on social media for daily updates, event announcements, and rescue stories.' }
+];
+
+export const impactStories = [
+  { id: 1, title: 'Nandinis Rescue', description: 'Found injured on a highway, Nandini underwent extensive surgery and is now living happily at our shelter.', image: 'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600', category: 'Rescue' },
+  { id: 2, title: 'From Malnourished to Mother', description: 'Ganga was rescued in a critical state. With proper care, she recovered fully and recently gave birth to a healthy calf.', image: 'https://images.unsplash.com/photo-1527153907836-6eee12ec34f4?w=600', category: 'Medical Recovery' },
+  { id: 3, title: 'New Eco-Friendly Shed', description: 'Thanks to our generous donors, we completed a 5000 sq ft solar-powered shed housing 100 elderly cows.', image: 'https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?w=600', category: 'Shelter' },
+  { id: 4, title: 'Farmers Training Camp', description: 'Over 200 local farmers were trained in natural farming techniques using cow dung and urine.', image: 'https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600', category: 'Community' }
+];
+
+export const stats = [
+  { label: 'Cows Cared For', value: 10000, suffix: '+' },
+  { label: 'Gaushala Centers', value: 5, suffix: '' },
+  { label: 'Active Volunteers', value: 400, suffix: '+' },
+  { label: 'Community Events', value: 100, suffix: '+' }
+];
+
+export const teamMembers = [
+  { id: 1, name: 'Swami Sivananda', role: 'Founder & Spiritual Head', image: 'https://i.pravatar.cc/300?img=68' },
+  { id: 2, name: 'Dr. R.K. Sharma', role: 'Chief Veterinarian', image: 'https://i.pravatar.cc/300?img=11' },
+  { id: 3, name: 'Anita Desai', role: 'Operations Manager', image: 'https://i.pravatar.cc/300?img=5' },
+  { id: 4, name: 'Rahul Verma', role: 'Volunteer Coordinator', image: 'https://i.pravatar.cc/300?img=33' }
+];
+
+export const volunteerOpportunities = [
+  { id: 1, title: 'Daily Cow Care Assistant', description: 'Help our staff with feeding, brushing, and basic care of cows.', timeCommitment: '2-4 hours/week' },
+  { id: 2, title: 'Medical Wing Helper', description: 'Assist veterinarians during treatments (prior experience preferred).', timeCommitment: '4 hours/week' },
+  { id: 3, title: 'Event Organizer', description: 'Help plan and execute fundraising and awareness events.', timeCommitment: 'Flexible' },
+  { id: 4, title: 'Social Media Ambassador', description: 'Create content and manage our digital presence to spread awareness.', timeCommitment: 'Flexible, Remote' },
+  { id: 5, title: 'Visitor Guide', description: 'Welcome visitors, conduct tours, and explain our activities.', timeCommitment: 'Weekends' }
+];

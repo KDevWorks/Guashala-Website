@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-charcoal-900 bg-cream-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  ::selection {
+    @apply bg-saffron-200 text-saffron-900;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-saffron-500 text-white font-semibold rounded-xl
+    hover:bg-saffron-600 active:bg-saffron-700 transition-all duration-300
+    shadow-md hover:shadow-lg hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-forest-600 text-white font-semibold rounded-xl
+    hover:bg-forest-700 active:bg-forest-800 transition-all duration-300
+    shadow-md hover:shadow-lg hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-forest-400 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-saffron-500 text-saffron-600 font-semibold rounded-xl
+    hover:bg-saffron-500 hover:text-white transition-all duration-300
+    focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+
+  .btn-golden {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-golden-500 text-white font-semibold rounded-xl
+    hover:bg-golden-600 active:bg-golden-700 transition-all duration-300
+    shadow-md hover:shadow-lg hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-golden-400 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-charcoal-100
+    hover:shadow-md transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply bg-white rounded-2xl shadow-sm border border-charcoal-100
+    hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl
+    text-charcoal-900 placeholder-charcoal-400
+    focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:border-saffron-400
+    transition-all duration-200;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-charcoal-900;
+  }
+
+  .section-subheading {
+    @apply text-lg md:text-xl text-charcoal-500 max-w-2xl;
+  }
+
+  .gradient-saffron {
+    @apply bg-gradient-to-r from-saffron-500 to-saffron-600;
+  }
+
+  .gradient-forest {
+    @apply bg-gradient-to-r from-forest-600 to-forest-700;
+  }
+
+  .page-hero {
+    @apply relative py-20 md:py-28 bg-gradient-to-br from-saffron-500 via-saffron-600 to-saffron-700 text-white overflow-hidden;
+  }
+
+  .page-hero::before {
+    content: '';
+    @apply absolute inset-0 opacity-10;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.4s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-charcoal-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-charcoal-400;
+}
+
+/* Hide scrollbar for mobile nav */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
